@@ -11,6 +11,10 @@
     </c:if>
     <template:addResources type="css" resources="${style}.css"/>
     <template:addResources type="javascript" resources="highlight.pack.js"/>
+    <c:if test="${currentNode.properties.showlinenumber.boolean}">
+        <template:addResources type="css" resources="highlightjs-line-numbers.css"/>
+        <template:addResources type="javascript" resources="highlightjs-line-numbers.min.js"/>
+    </c:if>
     <c:set var="language" value="${currentNode.properties.language.string}"/>
     <c:if test="${! empty language && language ne 'auto'}">
         <c:set var="languageCss" value="${' '}class=\"${fn:replace(language, '_', ', ')}\""/>
@@ -22,6 +26,11 @@
                 $('pre code').each(function (i, block) {
                     hljs.highlightBlock(block);
                 });
+                <c:if test="${currentNode.properties.showlinenumber.boolean}">
+                    $('code.hljs').each(function(i, block) {
+                        hljs.lineNumbersBlock(block);
+                    });
+                </c:if>
             });
         </script>
     </template:addResources>
