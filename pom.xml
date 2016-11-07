@@ -62,8 +62,9 @@
     <description>This is the custom module (highlight.js) for running on a Digital Experience Manager server.</description>
 
     <scm>
-        <connection>scm:dummy:uri</connection>
-        <developerConnection>scm:dummy:uri</developerConnection>
+        <connection>scm:git:git@github.com:pvollenweider/highlight.js.git</connection>
+        <developerConnection>scm:git:git@github.com:pvollenweider/highlight.js.git</developerConnection>
+        <url>https://github.com/pvollenweider/highlight.js</url>
     </scm>
 
     <repositories>
