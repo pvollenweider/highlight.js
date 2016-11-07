@@ -17,7 +17,7 @@
     </c:if>
     <c:set var="language" value="${currentNode.properties.language.string}"/>
     <c:if test="${! empty language && language ne 'auto'}">
-        <c:set var="languageCss" value="${' '}class=\"${fn:replace(language, '_', ', ')}\""/>
+        <c:set var="languageCss" value="${' '}class=\"${language}\""/>
     </c:if>
     <pre><code${languageCss}>${fn:escapeXml(code)}</code></pre>
     <template:addResources type="inline">
