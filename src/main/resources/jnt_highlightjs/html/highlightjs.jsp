@@ -43,7 +43,7 @@
                 });
                 var clipboard = new Clipboard('.btn-clipboard', {
                     target: function (trigger) {
-                        return trigger.parentNode.nextElementSibling<c:if test="${showlinenumber}">.nextElementSibling</c:if>
+                        return trigger.parentNode.nextElementSibling
                     }
                 })
 
