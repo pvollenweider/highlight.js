@@ -9,3 +9,6 @@
     -ms-user-select: none;
     user-select: none;
 }
+.hljs-ln-line.hljs-ln-n {
+    min-width: 30px;
+}

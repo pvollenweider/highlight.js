@@ -41,32 +41,12 @@
                         $(this).before(copybutton);
                     </c:if>
                 });
-                var clipboard = new Clipboard('.btn-clipboard', {
+                var clipboard = new ClipboardJS('.btn-clipboard', {
                     target: function (trigger) {
                         return trigger.parentNode.nextElementSibling
                     }
                 })
 
-                <%--clipboard.on('success', function (e) {
-                    $(e.trigger)
-                            .attr('title', 'Copied!')
-                            .tooltip('_fixTitle')
-                            .tooltip('show')
-                            .attr('title', 'Copy to clipboard')
-                            .tooltip('_fixTitle')
-
-                    e.clearSelection()
-                })
-
-                clipboard.on('error', function (e) {
-                    var fallbackMsg = /Mac/i.test(navigator.userAgent) ? 'Press \u2318 to copy' : 'Press Ctrl-C to copy'
-
-                    $(e.trigger)
-                            .attr('title', fallbackMsg)
-                            .tooltip('_fixTitle')
-                            .tooltip('show')
-                            .attr('title', 'Copy to clipboard')
-                            .tooltip('_fixTitle')--%>
 
                 <c:if test="${showlinenumber}">
                     $('code.hljs').each(function(i, block) {
