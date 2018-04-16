@@ -54,7 +54,7 @@
     <groupId>org.jahia.modules</groupId>
     <artifactId>highlightjs</artifactId>
     <name>highlight.js</name>
-    <version>9.12.1</version>
+    <version>9.12.2-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <description>This is the custom module (highlight.js) for running on a Digital Experience Manager server.</description>
 
@@ -62,7 +62,7 @@
         <connection>scm:git:git@github.com:pvollenweider/highlight.js.git</connection>
         <developerConnection>scm:git:git@github.com:pvollenweider/highlight.js.git</developerConnection>
         <url>https://github.com/pvollenweider/highlight.js</url>
-      <tag>highlightjs-9.12.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <repositories>
