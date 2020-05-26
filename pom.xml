@@ -49,7 +49,7 @@
     <parent>
         <artifactId>jahia-modules</artifactId>
         <groupId>org.jahia.modules</groupId>
-        <version>7.1.2.0</version>
+        <version>8.0.0.0</version>
     </parent>
     <groupId>org.jahia.modules</groupId>
     <artifactId>highlightjs</artifactId>
@@ -64,6 +64,9 @@
         <url>https://github.com/pvollenweider/highlight.js</url>
       <tag>HEAD</tag>
   </scm>
+    <properties>
+        <jahia-module-signature>MCwCFBncWEKCSo0BpcrODe7ebrcKHIjkAhQII0IVFoX1rtaJ3SfXZS0Y94eslA==</jahia-module-signature>
+    </properties>
 
     <repositories>
         <repository>
